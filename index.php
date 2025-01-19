@@ -37,6 +37,7 @@ else {
 
 */ 
 
+/*
 $temp = 15;
 $cloudy = false; 
 
@@ -46,7 +47,7 @@ if($temp < 0 || $temp > 30){
 else {
   echo "The weather is good <br>";
 }
-
+*/
 /*
 if($cloudy){
   echo "Its cloudy";
@@ -56,7 +57,8 @@ if($cloudy){
   echo "The weather is good.<br>";
   
 }
-*/
+
+
 if(!$cloudy) {
   echo "Its sunny :)";
 } 
@@ -64,5 +66,17 @@ else {
   echo "It's cloudy";
 } 
 
+*/
+
+$age = 25; 
+$citizen = true; 
+
+if ($age >= 18 && $citizen){
+  echo "You can vote";
+
+}else {
+  echo "You ou can vote";
+
+} 
 
 ?>
