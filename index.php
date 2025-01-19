@@ -35,14 +35,23 @@
 
  //Excerzie 
 
-  $hours = 40; 
+  $hours = 50; 
   $rate = 15;
   $weekley_pay = null;
 
-  if($hours <= 40) {
-    $weekley_pay = $hours * $rate;
-
+  if($hours <= 0) {
+    $weekley_pay = 0;
   }
+
+  elseif($hours <= 40){
+   
+    $weekley_pay = $hours * $rate; 
+     
+  }
+    else{
+      $weekley_pay = ($rate * 40) + (($hours - 40) * ($rate * 1.5));
+    }
+
 
   echo "You made \${$weekley_pay} this week"; 
 
